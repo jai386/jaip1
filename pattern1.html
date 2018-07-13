@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		document.write("<center>");
+		var s = '&nbsp&nbsp';
+		var count = 64;
+		for(var i = 1; i <= 7; i++)
+		{
+			count=count+1;
+			var ch = String.fromCharCode(count);
+			for(var j = 1; j <= 7; j++)
+			{
+				if(j>=8-i)
+				{
+				 	document.write(ch);
+				}
+				else{
+					document.write(s);
+				}
+			}
+			document.write("<br />");
+		}
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>butterfly</title>
+</head>
+<body>
+	<script type="text/javascript">
+		document.write("<center/>");
+		var k=0;
+		var str="NEHA";
+		var str1="AHEN"
+		var n=0,m=3;
+		for(var i=1; i<=7;i++)
+		{
+			n=0;
+			m=3;
+			(i<=4)?k++:k-- 
+			for(var j=1; j<=8; j++)
+			{
+				if(j<=k||j>=9-k)
+				{
+					if(j<=k)
+					{
+						document.write(str.charAt(n));
+						n=n+1;
+					}
+					else {
+						document.write(str1.charAt(m));
+						m=m-1;
+					}
+				}
+				else {
+					document.write("&nbsp&nbsp&nbsp");
+				}
+			}
+			document.write("<br/>");
+		}
+	</script>
+
+</body>
+</html>

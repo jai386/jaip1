@@ -1,0 +1,52 @@
+<Html>
+	<Head>
+		<link rel="stylesheet" type="text/css" href="calculator.css">
+		<script type="text/javascript">
+			function displynum(n1) {
+				if(calcform.txt1.value=="Infinity")
+				{
+					calcform.txt1.value='';
+				}
+				calcform.txt1.value = calcform.txt1.value+n1;
+			}
+
+			function clearButton() {
+				calcform.txt1.value = '';
+			}
+
+			function allClearButton(str) {
+				let str1=str.slice(0,-1);
+				calcform.txt1.value = str1;	
+			}
+
+			function calc(exp) {
+				var result = eval(exp);
+				calcform.txt1.value = result;
+			}
+		</script>
+	</Head>
+	<BODY class="body">
+		<form name=calcform class="form">
+			<input type = "text" placeholder = "0" name="txt1" class = "textarea" Style = "text-align:right"><br/>
+			<input type = "button" name = "btnAC" id = "btnac" value = "AC" onClick = "clearButton()">
+			<input type = "button" name = "btnC" id = "btnc" value = "C" onClick = "allClearButton(calcform.txt1.value)">
+			<input type = "button" name = "btnmod" id = "btn" value = "%" onClick = "displynum(btnmod.value)"><br>
+			<input type = "button" name = "btn9" id = "btn" value = "9" onClick = "displynum(btn9.value)">
+			<input type = "button" name = "btn8" id = "btn" value = "8" onClick = "displynum(btn8.value)">
+			<input type = "button" name = "btn7" id = "btn" value = "7" onClick = "displynum(btn7.value)">
+			<input type = "button" name = "btnadd" id = "btn" value = "+" onClick = "displynum(btnadd.value)"><br>
+			<input type = "button" name = "btn6" id = "btn" value = "6" onClick = "displynum(btn6.value)">
+			<input type = "button" name = "btn5" id = "btn" value = "5" onClick = "displynum(btn5.value)">
+			<input type = "button" name = "btn4" id = "btn" value = "4" onClick = "displynum(btn4.value)">
+			<input type = "button" name = "btnsub" id = "btn" value = "-" onClick = "displynum(btnsub.value)"><br>
+			<input type = "button" name = "btn3" id = "btn" value = "3" onClick = "displynum(btn3.value)">
+			<input type = "button" name = "btn2" id = "btn" value = "2" onClick = "displynum(btn2.value)">
+			<input type = "button" name = "btnone" id = "btn" value = "1" onClick = "displynum(btnone.value)">
+			<input type = "button" name = "btnmty" id = "btn" value = "*" onClick = "displynum(btnmty.value)"><br/>
+			<input type = "button" name = "btn0" id = "btn" value = "0" onClick = "displynum(btn0.value)">
+			<input type = "button" name = "btndot" id = "btn" value = "." onClick = "displynum(btndot.value)">
+			<input type = "button" name = "btndivide" id = "btn" value = "/" onClick = "displynum(btndivide.value)">
+			<input type = "button" name = "eqlbtn" id = "btn" value = "=" onclick="calc(calcform.txt1.value)">
+		</form>	
+	</BODY>
+</html>

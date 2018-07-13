@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Armstrong Number</title>
+</head>
+<body>
+	<script type="text/javascript">
+		function isArmstrong() {
+			var num = prompt("Enter a number");
+			var input_num = parseInt(num);
+			var numLength = num.length;
+			var sum=0;
+			for(var i=0; i<numLength; i++)
+			{
+				var container = 1;
+				var int_num = parseInt(num.charAt(i));
+				for(var j=0; j<numLength; j++)
+				{
+					container = container * int_num;
+				}
+				sum=sum + container;
+			}
+			if(input_num==sum) {
+				document.write(sum + " is Armstrong Number");
+			}
+			else {
+				document.write(input_num + " is not Armstrong Number");
+			}
+		}
+	</script>
+	<h2>Click Button to check Number is Armstrong or Not</h2>
+	<button onClick="isArmstrong()">Click me </button>
+</body>
+</html>

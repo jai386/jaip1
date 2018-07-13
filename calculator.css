@@ -1,0 +1,35 @@
+*
+{
+	margin:0px;
+	padding: 0px;
+}
+.body {
+	text-align: center;
+	background-color: yellow;
+}
+#btn {
+	height: 40px;
+	width: 50px;
+	background-color: #839192;
+
+}
+#btnac {
+	height: 40px;
+	width: 77px;
+	background-color: red;
+
+}
+.textarea {
+	width: 210px;
+	height: 40px;
+	font-size: 22px;
+}
+#btnc  {
+	height: 40px;
+	width: 77px;
+	background-color: #E08137;
+
+}
+.form {
+	margin: 100px;
+}
